@@ -30,7 +30,7 @@ const App = () =>{
             <div className="center_div">
             <br></br>
             <h1>To-Do List</h1>
-            <br></br>
+            <br/>
             <input type="text" 
              placeholder="add a item"
              value={inputList}

@@ -30,7 +30,7 @@ button{
   color: #fff;
   font-size: 10px;
   border: none;
-  border-color: transparent;
+  border-color: black;
   outline: none;
   border-radius: 50%;
   text-transform: uppercase;
@@ -49,10 +49,11 @@ ol li{
   text-align: left;
   font-size: 20px;
   font-weight: 500;
-  min-height: 40px;
+  min-height: 10px;
   display: flex;
+  justify-content: safe;
   align-items: center;
-  color: #8566aa;
+  color: #6b071c;
   text-transform: capitalize1;
 }
 input{
@@ -69,7 +70,7 @@ input{
 h1{
   color: white;
   background: transparent;
-  /* text-shadow: 0 2px 2px black; */
+  text-shadow: 0 2px 2px black;
   background-color: #8566aa;
   padding: 6px 0 2px 0;
   margin-bottom: 10px;
@@ -78,31 +79,32 @@ h1{
 .todo_style{
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  align-items: center;
+  justify-content: right;
+  align-items: end;
 }
-.todo_style .fa-times{
-  width: 20px;
+.fa-solid {
+  width: 150px;
   height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #8566aa;
-  margin: 0 15px 0 35px;
-  color: aliceblue;
-  box-shadow: 5px 5px 15px -5px rgb(0,0,0,0.5);
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  /* background-color: #8566aa; */
+  margin: 0px;
+  color: rgb(5, 24, 129);
+  /* box-shadow: 5px 5px 15px -5px rgb(0,0,0,0.5); */
 }
-.todo_style .fa-times:hover{
+.todo_style .fa-solid:hover{
   background-color: crimson;
 }
-.todo_style .fa-times:hover .list_style{
+.todo_style .fa-solid:hover.list_style{
   color: crimson;
 }
 @media (max-width: 768px){
   .center_div{
   width: 55%;
   }
-  .todo_style .fa-times{
+  .todo_style .fa-solid{
     margin: 0 15px 0 15px;
     display: flex;
     justify-content: center;
